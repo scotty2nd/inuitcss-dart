@@ -15,7 +15,11 @@ $inuit-media-huge-spacing:  $inuit-global-spacing-unit-huge !default;
 
 .o-media {
   @include inuit-clearfix();
-  display: block;
+
+  & {
+    display: block;
+  }
+
 }
 
   .o-media__img {

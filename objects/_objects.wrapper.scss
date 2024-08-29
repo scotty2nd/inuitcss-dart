@@ -15,9 +15,13 @@ $inuit-wrapper-padding: $inuit-global-spacing-unit !default;
 
 .o-wrapper {
   @include inuit-clearfix();
-  padding-right: $inuit-wrapper-padding;
-  padding-left:  $inuit-wrapper-padding;
-  margin-right: auto;
-  margin-left:  auto;
-  max-width: $inuit-wrapper-width;
+
+  & {
+    padding-right: $inuit-wrapper-padding;
+    padding-left:  $inuit-wrapper-padding;
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: $inuit-wrapper-width;
+  }
+
 }
